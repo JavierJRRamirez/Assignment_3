@@ -1,0 +1,38 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial;}
+
+.tablinks1 { width: 150px; height: 20px; background: lightgrey; color: black; margin: 2px; }
+.tablinks2 { width: 150px; height: 20px; background: lightgrey; color: black; margin: 2px; }
+.tablinks3 { width: 150px; height: 20px; background: lightgrey; color: black; margin: 2px; }
+
+/*.Dialer Button {width: 150; margin: 2}*/
+/* make all tags with the "cool" class name have blue text */
+.Dial { width: 80px; height: 20px; background: lightgrey; color: black; margin: 2px; }
+.NameList { width: 80px; height: 20px; background: lightgrey; color: black; margin: 2px; }
+.contact { width: 120px; height: 20px; background: lightgrey; color: black; margin: 2px; }
+
+.tab_bar {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Change background color of buttons on hover */
+.tab_bar button:hover {
+    background-color: #ddd;
+}
+
+/* Change background color of buttons on hover */
+.row button:hover {
+    background-color: #ddd;
+}
+
+.row1 {
+    padding: 14px 40px;
+}
+
+.row2 {
+    margin: 1px;
+}
+</style>
