@@ -16,29 +16,29 @@
             <form>
                 <input id="Dial" placeholder=" ">
             </form>
-            <div class="row">
-                <button class="Dial" id="num">1</button>
-                <button class="Dial" id="num">2</button>
-                <button class="Dial" id="num">3</button>
-            </div>
-            <div class="row">
-                <button class="Dial" id="num">4</button>
-                <button class="Dial" id="num">5</button>
-                <button class="Dial" id="num">6</button>
-            </div>
-            <div class="row">
-                <button class="Dial" id="num">7</button>
-                <button class="Dial" id="num">8</button>
-                <button class="Dial" id="num">9</button>
-            </div>
-            <div class="row">
-                <button class="Dial" id="num">*</button>
-                <button class="Dial" id="num">0</button>
-                <button class="Dial" id="num">#</button>
-            </div>
+            <table style="text-align: left">
+                <tr>
+                    <th> 1 </th>
+                    <th> 2 </th>
+                    <th> 3 </th>
+                </tr>
+                <tr>
+                    <th> 4 </th>
+                    <th> 5 </th>
+                    <th> 6 </th>
+                </tr>
+                <tr>
+                    <th> 7 </th>
+                    <th> 8 </th>
+                    <th> 9 </th>
+                </tr>
+            </table>
+            
+            
             <div class="row1">
-                <button class="Dial" id="num">Dial</button>
-                <button class="Dial" id="num">clear</button>
+                <!--  ctrl + alt [option] + h or w              -->
+                <button accesskey="h" onclick="alert('You clicked dial.')" class="Dial" id="num">Dial</button>
+                <button accesskey="w" onclick="alert('You clicked clear.')" class="Dial" id="num">clear</button>
             </div>
             </div>
         </div>
@@ -77,8 +77,8 @@
                 <input id="my info" placeholder="Jane.Smith@colorado.edu">
             </form>
             <div class="row">
-                <button class="contact" id="Adding">Add Contact</button>
-                <button class="contact" id="Adding">Clear</button>
+                <button accesskey="h" onclick="alert('You clicked Add Contact.')" class="contact" id="Adding">Add Contact</button>
+                <button accesskey="w" onclick="alert('You clicked clear.')" class="contact" id="Adding">Clear</button>
             </div>
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
