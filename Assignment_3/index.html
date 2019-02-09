@@ -1,68 +1,120 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <link rel="stylesheet" href="phone.css">
         <title>Assignment 1: GUI</title>
     </head>
     <body>
-        <div class="tab_bar">
+        <div role="list" class="tab_bar" aria-live="polite">
             <button class="tablinks1" id="MainButtonA"> Dialer </button>
             <button class="tablinks2" id="MainButtonB">Contact List</button>
             <button class="tablinks3" id="MainButtonC">Add Contact</button>
+            <button class="tablinks4" id="MainButtonD">About</button>
         </div>
-        
-        <div id="content1" class="tabcontent">
+        <main>
+        <div role="list" id="content1" class="tabcontent" aria-live="polite">
             <h3>Dialer</h3>
             <form>
                 <input id="Dial" placeholder=" ">
             </form>
-            <table style="text-align: left">
+            <div role="listitem" class="row">
+                <button class="Dial" id="num">1</button>
+                <button class="Dial" id="num">2</button>
+                <button class="Dial" id="num">3</button>
+            </div>
+            <div role="listitem" class="row">
+                <button class="Dial" id="num">4</button>
+                <button class="Dial" id="num">5</button>
+                <button class="Dial" id="num">6</button>
+            </div>
+            <div role="listitem" class="row">
+                <button class="Dial" id="num">7</button>
+                <button class="Dial" id="num">8</button>
+                <button class="Dial" id="num">9</button>
+            </div>
+            <div role="listitem" class="row">
+                <button class="Dial" id="num">*</button>
+                <button class="Dial" id="num">0</button>
+                <button class="Dial" id="num">#</button>
+            </div>
+            <div role="listitem" class="row1">
+                <!--  ctrl + alt [option] + h or w              -->
+                <button accesskey="r" onclick="alert('You clicked dial.')" class="Dial" id="num">Dial</button>
+                <button accesskey="t" onclick="alert('You clicked clear.')" class="Dial" id="num">Clear</button>
+            </div>
+			<img src="phones.jpg" alt="Phone emoji corresponding to the dial" align="absolute">
+			<nav>
+			<cite>https://www.apkthing.com/communication/552-truedialer-dialer-contacts.html</cite>
+			</nav>
+            </div>
+        </div>
+		</main>
+        
+		<main> 
+        <div role="list" id="content2" class="tabcontent">
+            <h3>Contact List</h3>
+            
+            <table border = "1">
                 <tr>
-                    <th> 1 </th>
-                    <th> 2 </th>
-                    <th> 3 </th>
+                    <th>Name</th>
+                    <th>Phone Number</th>
+                    <th>Email</th>
                 </tr>
                 <tr>
-                    <th> 4 </th>
-                    <th> 5 </th>
-                    <th> 6 </th>
+                    <td>Tyler</td>
+                    <td>(719)342-3423</td>
+                    <td>tyler1945@gmail.com</td>
                 </tr>
                 <tr>
-                    <th> 7 </th>
-                    <th> 8 </th>
-                    <th> 9 </th>
+                    <td>Josh</td>
+                    <td>(789)968-9053</td>
+                    <td>josh5393@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Conner</td>
+                    <td>(312)429-4390</td>
+                    <td>conner5932@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Javier</td>
+                    <td>(320)512-4392</td>
+                    <td>Javier9524@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Kyla</td>
+                    <td>(540)432-4332</td>
+                    <td>Kyla3012@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Joe</td>
+                    <td>(394)935-3924</td>
+                    <td>joe0193@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Cleveland</td>
+                    <td>(305)394-8023</td>
+                    <td>Cleveland3030@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>May</td>
+                    <td>(502)493-4920</td>
+                    <td>May4954@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Ash</td>
+                    <td>(204)492-4592</td>
+                    <td>ash3956@gmail.com</td>
                 </tr>
             </table>
-            
-            
-            <div class="row1">
-                <!--  ctrl + alt [option] + h or w              -->
-                <button accesskey="h" onclick="alert('You clicked dial.')" class="Dial" id="num">Dial</button>
-                <button accesskey="w" onclick="alert('You clicked clear.')" class="Dial" id="num">clear</button>
-            </div>
-            </div>
+			<img src="people.jpg" alt="Peoples information" align="absolute" width="500" height="300">
+			<nav>
+			<cite>https://www.poverello.org/contact/</cite>
+			</nav>
         </div>
+		</main>
         
-        <div id="content2" class="tabcontent">
-            <h3>Contact List</h3>
-            <div class="row2">
-                <button class="NameList" id="Name">Tyler</button>
-                <button class="NameList" id="Name">Josh</button>
-                <button class="NameList" id="Name">Conner</button>
-            </div>
-            <div class="row2">
-                <button class="NameList" id="Name">Javier</button>
-                <button class="NameList" id="Name">Kyla</button>
-                <button class="NameList" id="Name">Joe</button>
-            </div>
-            <div class="row2">
-                <button class="NameList" id="Name">Cleveland</button>
-                <button class="NameList" id="Name">May</button>
-                <button class="NameList" id="Name">Ash</button>
-            </div>
-        </div>
-        
-        <div id="content3" class="tabcontent">
+		<main>
+        <div role="list" id="content3" class="tabcontent">
             <h3>Add Contact</h3>
             <h4> Name </h4>
             <form>
@@ -76,11 +128,45 @@
             <form>
                 <input id="my info" placeholder="Jane.Smith@colorado.edu">
             </form>
-            <div class="row">
+            <div role="listitem" class="row">
                 <button accesskey="h" onclick="alert('You clicked Add Contact.')" class="contact" id="Adding">Add Contact</button>
                 <button accesskey="w" onclick="alert('You clicked clear.')" class="contact" id="Adding">Clear</button>
             </div>
+			<img src="contact.jpg" alt="All contact methods to input" align="absolute" width="500" height="300">
+			<nav>
+			<cite>https://www.poverello.org/contact/</cite>
+			</nav>
         </div>
+		</main>
+        
+		<main>
+        <div role="list" id="content4" class="tabcontent">
+            <h3>About</h3>
+			<table border = "1">
+                <tr>
+				    <th>Information</th>
+                    <th>Keys</th>
+                </tr>
+                <tr>
+                    <td>Tab through tabs</td>
+                    <td>TAB+ENTER</td>
+                </tr>
+				<tr>
+                    <td>Dialer tab: Dial and Clear </td>
+                    <td>ALT+R and ALT+T</td>
+                </tr>
+				<tr>
+                    <td>Add Contact tab: Add Contact and Clear</td>
+                    <td>ALT+H and ALT+W</td>
+                </tr>
+				</table>
+				<img src="about.jpg" alt="About information" align="absolute" width="500" height="500">
+				<nav>
+			   <cite>http://queenanncare.com/about-us/</cite>
+			   </nav>
+        </div>
+		</main>
+        
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="phone.js"></script>
     </body>
