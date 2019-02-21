@@ -1,7 +1,77 @@
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
-body {font-family: Arial;}
 
-img { max-width: 100%; }
+/*input[type="text"]{
+	border: black 2px;
+	width: 100%
+	height=50%
+}
+
+input[type="button"]{
+	border: black 2px;
+	height: 50%
+	width: 100%
+}
+*/
+body {
+	font-family: Verdana, Geneva, sans-serif;
+}
+
+button {
+	background-color: #a3a3a3;
+	color: #f7f7f7;
+	border: none;
+	text-align: center;
+}
+
+button:hover {
+	background-color: #484077;
+}
+
+input {
+	font-size: 16px;
+	padding: 8px;
+	border-radius: 10px;
+	border: 2px solid #484077;
+}
+
+label {
+	margin-bottom: 30px;
+}
+
+#dialerInput {
+	width: 200px;
+	margin: 5px;
+}
+
+.dialerButton {
+	font-size: 16px;
+	padding: 10px;
+	width: 60px;
+	margin: 5px;
+	float: left;
+}
+
+#numberDel, #numberClear {
+	width: 95px;
+}
+
+#numberDel:hover {
+	background-color: #0ea329;
+}
+
+#numberClear:hover {
+	background-color: #dd3208;
+}
+
+.dialerRow {
+	width: 600px;
+	clear: both;
+}
+
+label[for="dialerInput"]
+{
+    display:none;
+}
 
 </style>

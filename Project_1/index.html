@@ -6,7 +6,7 @@
     </head>
 	<body>
 	<div class = title >Project 1: Calculator</div> 
-		<table border=".1">
+		<table border=1">
 		<tr>
 			<td><input type="text" id="answer"/></td>
 			<td><input type="button" value="clr" onclick="clr()"/></td>
@@ -34,13 +34,58 @@
 		</tr>
 	
 		<tr>
-			<td> <input accesskey="0" type="button" value="0" onclick="show('0)"/></td>
+			<td> <input accesskey="0" type="button" value="0" onclick="show('0')"/></td>
 			<td> <input accesskey="." type="button" value="." onclick="show('.')"/></td>
 			<td> <input accesskey="p" type="button" value="=" onclick="calculate()"/></td>
 			<td> <input accesskey="=" type="button" value="+" onclick="show('+')"/></td>
 		</tr>
 		
 		</table>
+
+		<div id="content_dialer" role="main">
+
+    		<h1 class="pageHeader">Calculator</h1>
+
+    		<form>
+    			<label for="dialerInput">Dialer Input</label>
+				<input id="dialerInput">
+			</form>
+
+    		<div class="dialerRow">
+    			<button class="dialerButton" id="number1" accesskey="1">1</button>
+	    		<button class="dialerButton" id="number2" accesskey="2">2</button>
+	    		<button class="dialerButton" id="number3" accesskey="3">3</button>
+	    		<button class="dialerButton" id="numberPlus" accesskey="+">+</button>
+    		</div>
+    		
+    		<div class="dialerRow">
+    			<button class="dialerButton" id="number4" accesskey="4">4</button>
+	    		<button class="dialerButton" id="number5" accesskey="5">5</button>
+	    		<button class="dialerButton" id="number6" accesskey="6">6</button>
+	    		<button class="dialerButton" id="numberMinus" accesskey="-">-</button>
+    		</div>
+
+    		<div class="dialerRow">
+    			<button class="dialerButton" id="number7" accesskey="7">7</button>
+	    		<button class="dialerButton" id="number8" accesskey="8">8</button>
+	    		<button class="dialerButton" id="number9" accesskey="9">9</button>
+	    		<button class="dialerButton" id="numberMult" accesskey="*">*</button>
+    		</div>
+
+    		<div class="dialerRow">
+    			<button class="dialerButton" id="numberDecimal" accesskey=".">.</button>
+	    		<button class="dialerButton" id="number0" accesskey="1">0</button>
+	    		<button class="dialerButton" id="numberEqual" accesskey="p">=</button>
+	    		<button class="dialerButton" id="numberDiv" accesskey="/">/</button>
+    		</div>
+
+    		<div class="dialerRow">
+    			<button class="dialerButton" id="numberDel">Del</button>
+	    		<button class="dialerButton" id="numberClear">Clear</button>
+    		</div>
+    		
+    	</div>
+
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="calculator.js"></script>
 	</body>
