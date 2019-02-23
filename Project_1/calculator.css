@@ -20,39 +20,83 @@ body {
 	font-family: Verdana, Geneva, sans-serif;
 }
 
-button {
+button, .dialerButton {
 	background-color: #a3a3a3;
 	color: #f7f7f7;
 	border: none;
 	text-align: center;
+	border-radius: 0px;
+	margin-bottom: 4px;
 }
 
-button:hover {
-	background-color: #484077;
-}
-
-input {
+#answer {
 	font-size: 16px;
 	padding: 8px;
-	border-radius: 10px;
-	border: 2px solid #484077;
+	border: 2px solid #53826f;
+	width: 232px;
+	margin-bottom: 4px;
+	height: 40px;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
 }
 
-label {
-	margin-bottom: 30px;
+#numZero {
+	border-bottom-left-radius: 15px;
 }
 
-#dialerInput {
-	width: 200px;
-	margin: 5px;
+#numPlus {
+	border-bottom-right-radius: 15px;
+}
+
+#numContainer {
+/*	border: 2px solid black;
+*/	float: left;
+	display: inline-block;
+	clear: left;
+	padding: 0px;
+}
+
+#opsContainer {
+/*	border: 2px solid red;
+*/	float: left;
+	display: inline-block;
+	padding: 0px;
+}
+
+#funcContainer {
+/*	border: 2px solid blue;
+*/	float: left;
+	display: inline-block;
+	clear: left;
+	padding: 0px;
+	margin-left: 32px;
+	margin-top: 10px;
 }
 
 .dialerButton {
 	font-size: 16px;
 	padding: 10px;
 	width: 60px;
-	margin: 5px;
-	float: left;
+	float: none;
+
+}
+
+#numContainer .dialerButton {
+	height: 60px;
+}
+
+#opsContainer .dialerButton {
+	height: 47px;
+	margin-left: 4px;
+	background-color: #53826f;
+}
+
+#opsContainer .dialerButton:hover {
+	background-color: #7cc1a5;
+}
+
+#funcContainer .dialerButton {
+	height: 60px;
 }
 
 #numberDel, #numberClear {
@@ -68,13 +112,22 @@ label {
 }
 
 .dialerRow {
-	width: 600px;
 	clear: both;
 }
 
-label[for="dialerInput"]
+label[for="answer"]
 {
     display:none;
+}
+
+button:hover, .dialerButton:hover {
+	background-color: #d1d1d1;
+}
+
+.pageHeader {
+	font-family: Verdana, Geneva, sans-serif;
+	color: #53826f;
+	margin-left: 32px;
 }
 
 </style>
