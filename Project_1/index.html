@@ -1,12 +1,13 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
+
     <head>
         <link rel="stylesheet" href="calculator.css">
         <title>Project 1: Calculator</title>
     </head>
+
 	<body>
-	<div class = title >Project 1: Calculator</div> 
+	<!-- <div class = title >Project 1: Calculator</div> 
 		<table border=1">
 		<tr>
 			<td><input type="text" id="answer"/></td>
@@ -49,44 +50,63 @@
 			<td> <input accesskey="g" type="button" value="log" onclick="log()"/></td>
 		</tr>
 		
-		</table>
+		</table> -->
 		
 		
 		
 		<div id="content_dialer" role="main">
     		<h1 class="pageHeader">Calculator</h1>
     		<form>
-    			<label for="dialerInput">Dialer Input</label>
-				<input id="dialerInput">
+    			<label for="answer">Calculator Input</label>
+				<input type="text" id="answer">
 			</form>
-    		<div class="dialerRow">
-    			<button class="dialerButton" id="number1" accesskey="1">1</button>
-	    		<button class="dialerButton" id="number2" accesskey="2">2</button>
-	    		<button class="dialerButton" id="number3" accesskey="3">3</button>
-	    		<button class="dialerButton" id="numberPlus" accesskey="+">+</button>
+
+			<div id="numContainer">
+
+	    		<div class="dialerRow">
+	    			<input class="dialerButton" accesskey="7" type="button" value="7" onclick="show('7')"/>
+					<input class="dialerButton" accesskey="8" type="button" value="8" onclick="show('8')"/>
+			 		<input class="dialerButton" accesskey="9" type="button" value="9" onclick="show('9')"/>
+	    		</div>
+	    		
+	    		<div class="dialerRow">
+	    			<input class="dialerButton" accesskey="4" type="button" value="4" onclick="show('4')"/>
+					<input class="dialerButton" accesskey="5" type="button" value="5" onclick="show('5')"/>
+					<input class="dialerButton" accesskey="6" type="button" value="6" onclick="show('6')"/>
+	    		</div>
+
+	    		<div class="dialerRow">
+	    			<input class="dialerButton" accesskey="1" type="button" value="1" onclick="show('1')"/>
+					<input class="dialerButton" accesskey="2" type="button" value="2" onclick="show('2')"/>
+					<input class="dialerButton" accesskey="3" type="button" value="3" onclick="show('3')"/>
+	    		</div>
+
+	    		<div class="dialerRow">
+	    			<input class="dialerButton" id="numZero" accesskey="0" type="button" value="0" onclick="show('0')"/>
+					<input class="dialerButton" accesskey="." type="button" value="." onclick="show('.')"/>
+					<input class="dialerButton" accesskey="Enter" type="button" value="=" onclick="calculate()"/>
+	    		</div>
+
     		</div>
-    		
-    		<div class="dialerRow">
-    			<button class="dialerButton" id="number4" accesskey="4">4</button>
-	    		<button class="dialerButton" id="number5" accesskey="5">5</button>
-	    		<button class="dialerButton" id="number6" accesskey="6">6</button>
-	    		<button class="dialerButton" id="numberMinus" accesskey="-">-</button>
+
+    		<div id="opsContainer">
+    			<div class="dialerRow">
+    				<input class="dialerButton" type="button" value="Clear" onclick="clr()"/><br>
+	    			<input class="dialerButton" accesskey="/" type="button" value="/" onclick="show('/')"/><br>
+	    			<input class="dialerButton" accesskey="*" type="button" value="*" onclick="show('*')"/><br>
+	    			<input class="dialerButton" accesskey="-" type="button" value="-" onclick="show('-')"/><br>
+	    			<input class="dialerButton" id="numPlus" accesskey="+" type="button" value="+" onclick="show('+')"/>
+	    		</div>
     		</div>
-    		<div class="dialerRow">
-    			<button class="dialerButton" id="number7" accesskey="7">7</button>
-	    		<button class="dialerButton" id="number8" accesskey="8">8</button>
-	    		<button class="dialerButton" id="number9" accesskey="9">9</button>
-	    		<button class="dialerButton" id="numberMult" accesskey="*">*</button>
-    		</div>
-    		<div class="dialerRow">
-    			<button class="dialerButton" id="numberDecimal" accesskey=".">.</button>
-	    		<button class="dialerButton" id="number0" accesskey="1">0</button>
-	    		<button class="dialerButton" id="numberEqual" accesskey="p">=</button>
-	    		<button class="dialerButton" id="numberDiv" accesskey="/">/</button>
-    		</div>
-    		<div class="dialerRow">
-    			<button class="dialerButton" id="numberDel">Del</button>
-	    		<button class="dialerButton" id="numberClear">Clear</button>
+
+    		<div id="funcContainer">
+    			<div class="dialerRow">
+	    			<input class="dialerButton" accesskey="s" type="button" value="sin" onclick="sin()"/>
+					<input class="dialerButton" accesskey="c" type="button" value="cos" onclick="cos()"/>
+					<input class="dialerButton" accesskey="u" type="button" value="tan" onclick="tan()"/><br>
+					<input class="dialerButton" accesskey="t" type="button" value="sqrt" onclick="sqrt()"/>
+					<input class="dialerButton" accesskey="g" type="button" value="log" onclick="log()"/>
+	    		</div>
     		</div>
     		
     	</div>
