@@ -60,6 +60,11 @@
 				<input type="text" id="answer">
 			</form>
 
+			<div class="dialerRow">
+				<input id="ButtonSwitchero" type="button" value="Operations"/>
+            	<input id="ButtonSwitcherf"type="button" value="Functions"/>
+			</div>
+
 			<div id="numContainer">
 
 	    		<div class="dialerRow">
@@ -100,26 +105,13 @@
 	
     		<div id="funcContainer">
     			<div class="dialerRow">
-				<input class="dialerButton" type="button" value="Clear" onclick="clr()"/><br>
-	    			<input class="dialerButton" accesskey="s" type="button" value="sin" onclick="sin()"/>
-					<input class="dialerButton" accesskey="c" type="button" value="cos" onclick="cos()"/>
+	    			<input class="dialerButton" accesskey="s" type="button" value="sin" onclick="sin()"/><br>
+					<input class="dialerButton" accesskey="c" type="button" value="cos" onclick="cos()"/><br>
 					<input class="dialerButton" accesskey="u" type="button" value="tan" onclick="tan()"/><br>
-					<input class="dialerButton" accesskey="t" type="button" value="sqrt" onclick="sqrt()"/>
-					<input class="dialerButton" accesskey="g" type="button" value="log" onclick="log()"/>
+					<input class="dialerButton" accesskey="t" type="button" value="sqrt" onclick="sqrt()"/><br>
+					<input class="dialerButton" id="numLog" accesskey="g" type="button" value="log" onclick="log()"/>
 	    		</div>
     		</div>
-			
-			<div id="Switchf">
-			<div class="dialerRow">
-             <input class="ButtonSwitcherf" type="button" value="sin, cos, tan, sqrt, log"/><br>
-			 </div>
-	       </div>
-		   
-			<div id="Switcho">
-			<div class="dialerRow">
-             <input class="ButtonSwitchero" type="button" value="+, -, /, *"/><br>
-			 </div>
-	       </div>
     		
     	</div>
 		

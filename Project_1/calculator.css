@@ -19,7 +19,7 @@ body {
 	font-family: Verdana, Geneva, sans-serif;
 }
 
-button, .dialerButton {
+button, .dialerButton, input[type="button"] {
 	background-color: #a3a3a3;
 	color: #f7f7f7;
 	border: none;
@@ -43,7 +43,7 @@ button, .dialerButton {
 	border-bottom-left-radius: 15px;
 }
 
-#numPlus {
+#numPlus, #numLog {
 	border-bottom-right-radius: 15px;
 }
 
@@ -55,22 +55,22 @@ button, .dialerButton {
 	padding: 0px;
 }
 
-#opsContainer {
+#opsContainer, #funcContainer {
 /*	border: 2px solid red;
 */	float: left;
 	display: inline-block;
 	padding: 0px;
 }
 
-#funcContainer {
-/*	border: 2px solid blue;
-*/	float: left;
+/*#funcContainer {
+	border: 2px solid blue;
+	float: left;
 	display: inline-block;
 	clear: left;
 	padding: 0px;
 	margin-left: 32px;
 	margin-top: 10px;
-}
+}*/
 
 .dialerButton {
 	font-size: 16px;
@@ -95,7 +95,13 @@ button, .dialerButton {
 }
 
 #funcContainer .dialerButton {
-	height: 60px;
+	height: 47px;
+	margin-left: 4px;
+	background-color: #4f96af;
+}
+
+#funcContainer .dialerButton:hover {
+	background-color: #6dc8e8;
 }
 
 #numberDel, #numberClear {
@@ -128,5 +134,28 @@ button:hover, .dialerButton:hover {
 	color: #53826f;
 	margin-left: 32px;
 }
+
+#ButtonSwitcherf {
+	background-color: #4f96af;
+	width: 124px;
+	height: 30px;
+}
+
+#ButtonSwitchero {
+	background-color: #53826f;
+	width: 124px;
+	height: 30px;
+}
+
+#ButtonSwitchero:hover {
+	background-color: #7cc1a5;
+}
+
+ #ButtonSwitcherf:hover {
+ 	background-color: #6dc8e8;
+ }
+
+
+
 
 </style>

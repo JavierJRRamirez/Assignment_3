@@ -3,12 +3,12 @@ $(document).ready(function() { // do this when the document is loaded
                   $("#funcContainer").hide(); // hide the element with ID "otherElement"
 });
 
-$("#Switchf").click(function() { // when "button_id" is clicked
+$("#ButtonSwitcherf").click(function() { // when "button_id" is clicked
                       $("#funcContainer").show(); // show element
                       $("#opsContainer").hide();    // hide other element
                       });
 
-$("#Switcho").click(function() { // when "button_id" is clicked
+$("#ButtonSwitchero").click(function() { // when "button_id" is clicked
                       $("#funcContainer").hide(); // show element
                       $("#opsContainer").show();    // hide other element
                       });
