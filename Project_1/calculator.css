@@ -163,6 +163,7 @@ button:hover, .dialerButton:hover {
  }
 
 #funcContainerTwo {
+	float: left;
 	display: none;
 }
 
