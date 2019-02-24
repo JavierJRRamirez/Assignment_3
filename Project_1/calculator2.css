@@ -1,0 +1,180 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+
+/*input[type="text"]{
+	border: black 2px;
+	width: 100%
+	height=50%
+}
+<<<<<<< HEAD
+=======
+>>>>>>> 738c4a1c4075482f91cdd31055d36b475f464a6b
+input[type="button"]{
+	border: black 2px;
+	height: 50%
+	width: 100%
+}
+*/
+body {
+	font-family: Verdana, Geneva, sans-serif;
+}
+
+button, .dialerButton, input[type="button"] {
+	background-color: #a3a3a3;
+	color: #f7f7f7;
+	border: none;
+	text-align: center;
+	border-radius: 0px;
+	margin-bottom: 4px;
+}
+
+#answer {
+	font-size: 16px;
+	padding: 8px;
+	border: 2px solid #53826f;
+	width: 297px;
+	margin-bottom: 4px;
+	height: 40px;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+}
+
+#numZero {
+	border-bottom-left-radius: 15px;
+}
+
+#numLog {
+	border-bottom-right-radius: 15px;
+}
+
+#numPlus {
+	border-radius: 0px;
+}
+
+#numContainer {
+/*	border: 2px solid black;
+*/	float: left;
+/*	display: inline-block;
+*/	clear: left;
+	padding: 0px;
+}
+
+#opsContainer, #funcContainer {
+/*	border: 2px solid red;
+*/	float: left;
+/*	display: inline-block;
+*/	padding: 0px;
+}
+
+/*#funcContainer {
+	border: 2px solid blue;
+	float: left;
+	display: inline-block;
+	clear: left;
+	padding: 0px;
+	margin-left: 32px;
+	margin-top: 10px;
+}*/
+
+#content_dialer {
+	display: inline-block;
+}
+
+.dialerButton {
+	font-size: 16px;
+	padding: 10px;
+	width: 60px;
+	float: none;
+
+}
+
+#numContainer .dialerButton {
+	height: 60px;
+}
+
+#opsContainer .dialerButton {
+	height: 47px;
+	margin-left: 4px;
+	background-color: #53826f;
+}
+
+#opsContainer .dialerButton:hover {
+	background-color: #7cc1a5;
+}
+
+#funcContainer .dialerButton {
+	height: 47px;
+	margin-left: 4px;
+	background-color: #4f96af;
+}
+
+#funcContainer .dialerButton:hover {
+	background-color: #6dc8e8;
+}
+
+#numberDel, #numberClear {
+	width: 95px;
+}
+
+#numberDel:hover {
+	background-color: #0ea329;
+}
+
+#numberClear:hover {
+	background-color: #dd3208;
+}
+
+.dialerRow {
+	clear: both;
+}
+
+label[for="answer"]
+{
+    display:none;
+}
+
+button:hover, .dialerButton:hover {
+	background-color: #d1d1d1;
+}
+
+.pageHeader {
+	font-family: Verdana, Geneva, sans-serif;
+	color: #53826f;
+	text-align: center;
+}
+
+#ButtonSwitcherf {
+	background-color: #4f96af;
+	width: 124px;
+	height: 30px;
+	display: none;
+}
+
+#ButtonSwitchero {
+	background-color: #53826f;
+	width: 124px;
+	height: 30px;
+	display: none;
+}
+
+#ButtonSwitchero:hover {
+	background-color: #7cc1a5;
+}
+
+ #ButtonSwitcherf:hover {
+ 	background-color: #6dc8e8;
+ }
+
+#funcContainerTwo .dialerButton {
+	display: inline-block;
+	height: 47px;
+	margin-left: 4px;
+	background-color: #4f96af;
+}
+
+#funcContainerTwo {
+	display: inline-block;
+}
+
+
+</style>

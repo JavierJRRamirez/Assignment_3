@@ -2,7 +2,8 @@
 <html lang="en">
 
     <head>
-        <link rel="stylesheet" href="calculator.css">
+    	<link rel="stylesheet"  href="calculator2.css">
+        <link rel="stylesheet" media="screen and (min-width: 1px) and (max-width: 400px)" href="calculator.css">
         <title>Project 1: Calculator</title>
     </head>
 
@@ -104,6 +105,16 @@
     		</div>
 	
     		<div id="funcContainer">
+    			<div class="dialerRow">
+	    			<input class="dialerButton" accesskey="s" type="button" value="sin" onclick="sin()"/><br>
+					<input class="dialerButton" accesskey="c" type="button" value="cos" onclick="cos()"/><br>
+					<input class="dialerButton" accesskey="u" type="button" value="tan" onclick="tan()"/><br>
+					<input class="dialerButton" accesskey="t" type="button" value="sqrt" onclick="sqrt()"/><br>
+					<input class="dialerButton" id="numLog" accesskey="g" type="button" value="log" onclick="log()"/>
+	    		</div>
+    		</div>
+
+    		<div id="funcContainerTwo">
     			<div class="dialerRow">
 	    			<input class="dialerButton" accesskey="s" type="button" value="sin" onclick="sin()"/><br>
 					<input class="dialerButton" accesskey="c" type="button" value="cos" onclick="cos()"/><br>
