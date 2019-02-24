@@ -1,5 +1,5 @@
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
+/*<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>*/
 
 /*input[type="text"]{
 	border: black 2px;
@@ -17,6 +17,7 @@ input[type="button"]{
 
 body {
 	font-family: Verdana, Geneva, sans-serif;
+	display: inline-block;
 }
 
 button, .dialerButton, input[type="button"] {
@@ -166,4 +167,4 @@ button:hover, .dialerButton:hover {
 }
 
 
-</style>
+/*</style>*/
