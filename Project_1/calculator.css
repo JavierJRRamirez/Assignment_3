@@ -74,7 +74,9 @@ button, .dialerButton, input[type="button"] {
 }*/
 
 #content_dialer {
-	display: inline-block;
+/*	border: 3px solid green;
+*/	display: inline-block;
+	margin: auto;
 }
 
 .dialerButton {
