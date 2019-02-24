@@ -1,3 +1,20 @@
+$(document).ready(function() { // do this when the document is loaded
+                  $("#opsContainer").show(); // show the element with ID "element"
+                  $("#funcContainer").hide(); // hide the element with ID "otherElement"
+});
+
+$("#Switchf").click(function() { // when "button_id" is clicked
+                      $("#funcContainer").show(); // show element
+                      $("#opsContainer").hide();    // hide other element
+                      });
+
+$("#Switcho").click(function() { // when "button_id" is clicked
+                      $("#funcContainer").hide(); // show element
+                      $("#opsContainer").show();    // hide other element
+                      });
+
+
+
 //display numbers
          function show(num) 
          { 

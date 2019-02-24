@@ -13,7 +13,6 @@
 			<td><input type="text" id="answer"/></td>
 			<td><input type="button" value="clr" onclick="clr()"/></td>
 		</tr>
-
 		<tr>
 			<td> <input accesskey="7" type="button" value="7" onclick="show('7')"/></td>
 			<td> <input accesskey="8" type="button" value="8" onclick="show('8')"/></td>
@@ -98,9 +97,10 @@
 	    			<input class="dialerButton" id="numPlus" accesskey="+" type="button" value="+" onclick="show('+')"/>
 	    		</div>
     		</div>
-
+	
     		<div id="funcContainer">
     			<div class="dialerRow">
+				<input class="dialerButton" type="button" value="Clear" onclick="clr()"/><br>
 	    			<input class="dialerButton" accesskey="s" type="button" value="sin" onclick="sin()"/>
 					<input class="dialerButton" accesskey="c" type="button" value="cos" onclick="cos()"/>
 					<input class="dialerButton" accesskey="u" type="button" value="tan" onclick="tan()"/><br>
@@ -108,6 +108,18 @@
 					<input class="dialerButton" accesskey="g" type="button" value="log" onclick="log()"/>
 	    		</div>
     		</div>
+			
+			<div id="Switchf">
+			<div class="dialerRow">
+             <input class="ButtonSwitcherf" type="button" value="sin, cos, tan, sqrt, log"/><br>
+			 </div>
+	       </div>
+		   
+			<div id="Switcho">
+			<div class="dialerRow">
+             <input class="ButtonSwitchero" type="button" value="+, -, /, *"/><br>
+			 </div>
+	       </div>
     		
     	</div>
 		
