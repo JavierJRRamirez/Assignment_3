@@ -1,20 +1,3 @@
-/*<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
-*/
-/*input[type="text"]{
-	border: black 2px;
-	width: 100%
-	height=50%
-}
-<<<<<<< HEAD
-=======
->>>>>>> 738c4a1c4075482f91cdd31055d36b475f464a6b
-input[type="button"]{
-	border: black 2px;
-	height: 50%
-	width: 100%
-}
-*/
 body {
 	font-family: Verdana, Geneva, sans-serif;
 	display: inline-block;
@@ -33,7 +16,7 @@ button, .dialerButton, input[type="button"] {
 	font-size: 16px;
 	padding: 8px;
 	border: 2px solid #53826f;
-	width: 297px;
+	width: 299px;
 	margin-bottom: 4px;
 	height: 40px;
 	border-top-left-radius: 15px;
@@ -53,34 +36,19 @@ button, .dialerButton, input[type="button"] {
 }
 
 #numContainer {
-/*	border: 2px solid black;
-*/	float: left;
-/*	display: inline-block;
-*/	clear: left;
+	float: left;
+	clear: left;
 	padding: 0px;
 }
 
 #opsContainer, #funcContainer {
-/*	border: 2px solid red;
-*/	float: left;
-/*	display: inline-block;
-*/	padding: 0px;
-}
-
-/*#funcContainer {
-	border: 2px solid blue;
 	float: left;
-	display: inline-block;
-	clear: left;
 	padding: 0px;
-	margin-left: 32px;
-	margin-top: 10px;
-}*/
+}
 
 #content_dialer {
 	display: inline-block;
-/*	border: 3px solid green;
-*/	margin: auto;
+	margin-left: 10px;
 }
 
 .dialerButton {
@@ -179,5 +147,6 @@ button:hover, .dialerButton:hover {
 	display: inline-block;
 }
 
-
-/*</style>*/
+#funcContainerTwo .dialerButton:hover {
+	background-color: #6dc8e8;
+}
